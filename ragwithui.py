@@ -52,7 +52,7 @@ if question:
         prompt = ChatPromptTemplate.from_template(
             "You are an assistant for article\nQuestion: {question} \nContext: {context} \nAnswer:"
         )
-        llm = ChatOpenAI(model="gpt-3.5-turbo-0125")
+        llm = ChatOpenAI(model="gpt-4o-mini")
 
         # Chain
         context_docs = st.session_state.retriever.invoke(question)
